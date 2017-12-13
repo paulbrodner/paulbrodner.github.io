@@ -1,0 +1,43 @@
+# Site settings
+title: Paul Brodner's Blog
+description: 'Tips & Tricks'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'paulbrodner-blog'
+
+author:
+  name: 'Paul Brodner'
+  email: paul.brodner@gmail.com
+  twitter_username: paulbrodner
+  facebook_username: paulbrodner
+  github_username:  paulbrodner
+  linkedin_username:  paulbrodner
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile']
