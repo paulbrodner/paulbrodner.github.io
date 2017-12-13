@@ -1,7 +1,7 @@
 # Site settings
 title: Paul Brodner's Blog
 description: 'Tips & Tricks'
-url: 'http://joshgerdes.com/jekyll-uno'
+url: 'https://paulbrodner.github.io'
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'paulbrodner-blog'
