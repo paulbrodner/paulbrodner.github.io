@@ -4,7 +4,7 @@ description: 'Tips & Tricks'
 url: 'https://paulbrodner.github.io'
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'paulbrodner-blog'
+disqus_shortname: 'paulbrodner-blog'
 
 author:
   name: 'Paul Brodner'
