@@ -1,0 +1,11 @@
+/* THANKS */
+* Jekyll-Uno
+https://github.com/joshgerdes/jekyll-uno
+
+* Simple-Jekyll-Search v1.4.1 
+https://github.com/christian-fei/Simple-Jekyll-Search
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: Jekyll
+Software: Visual Studio Code
