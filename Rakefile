@@ -5,7 +5,8 @@ end
 
 desc "test"
 task :test do     
-    sh 'script/cibuild'
+    sh "bundle exec jekyll build"
+    sh "bundle exec htmlproofer ./_site  --url-ignore '/#blog/,/paulbrodner.github.io/,/fb.me/' --http-status-ignore 999"
 end
 
 
