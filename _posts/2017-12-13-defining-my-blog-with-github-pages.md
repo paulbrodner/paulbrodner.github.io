@@ -62,3 +62,5 @@ To sum-up I have a [Rakefile](https://github.com/paulbrodner/paulbrodner.github.
 * search capabilities by JSON data (source [#12](https://github.com/paulbrodner/paulbrodner.github.io/pull/12))
 ![Search Capabilities](/images/posts/search-capabilities.png)
 I'm defining a new "search.html" page that will contain the search code and one search.json that will automatically generate in JSON format the entire condent of this blog. Thanks to [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+
+Search is available on the top right corner - needs some improvements in terms of responsiveness.
