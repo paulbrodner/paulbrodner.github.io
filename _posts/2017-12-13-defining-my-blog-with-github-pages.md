@@ -7,9 +7,9 @@ tags: [Jekyllrb, Ruby]
 ---
 Yes, that's right, you can use [Github Pages](https://pages.github.com) to host your personal or organization projects directly on Github.
 
-I'm really a fan of the [Ruby language](https://www.ruby-lang.org/en/) since [2011](https://www.linkedin.com/in/paulbrodner/) when I've started as a Ruby on Rails developer so why not using this language to define my personal blog?
+I'm really a fan of the [Ruby language](https://www.ruby-lang.org/en/) since [2011](https://www.linkedin.com/in/paulbrodner/) when I've worked as a Ruby on Rails developer, so why not using this language to define my personal blog?
 
-There are a lot of resources out there showing you step by step guides, how you can achieve this: I suggest to start with official https://pages.github.com ...
+There are a lot of resources out there with step by step guides, how you can achieve this: I suggest to start with official https://pages.github.com documentation.
 
 **This is how I did it:**
 ### a) Define github code location of my blog
@@ -32,7 +32,7 @@ In the `Done` column, you will see items that are closed.
 
  {% include idea.html content="Try to close issues directly from commit messages, using <a href='https://help.github.com/articles/closing-issues-using-keywords/'>keyworkds</a>" %}
 
-All issues have assigned a [label](https://help.github.com/articles/applying-labels-to-issues-and-pull-requests/) to them I can easily filter and sort-out what I want.
+All issues have assigned a [label](https://help.github.com/articles/applying-labels-to-issues-and-pull-requests/) to them so I can easily filter and sort-out what I want.
 
 ### c) Implementation
 
@@ -63,4 +63,4 @@ To sum-up I have a [Rakefile](https://github.com/paulbrodner/paulbrodner.github.
 ![Search Capabilities](/images/posts/search-capabilities.png)
 I'm defining a new "search.html" page that will contain the search code and one search.json that will automatically generate in JSON format the entire condent of this blog. Thanks to [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
 
-Search is available on the top right corner - needs some improvements in terms of responsiveness.
+Search is available on the top right corner - needs some improvements in terms of responsiveness, but I'm happy with it for now.

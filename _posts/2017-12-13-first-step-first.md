@@ -12,5 +12,5 @@ You will find here [Tutorials](/categories/#Tutorials), [Tips & Tricks](/categor
 
 At any time, please feel free to add comments to my blog posts, send me an email, or hit me with a tweet!
 
-Checkout my contact details on the left!
+Checkout my contact details - I'm pretty sure you will find them :)
 
