@@ -3,7 +3,7 @@ title: Paul Brodner's Blog
 description: 'Tips & Tricks'
 url: 'https://paulbrodner.github.io'
 baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-112014312-1'
 disqus_shortname: 'paulbrodner'
 
 author:
