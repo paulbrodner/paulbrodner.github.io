@@ -49,7 +49,7 @@ env:
 sudo: false # route your build to the container-based infrastructure for a faster build
 
 ```
-In `scripts` section above, I first build my static website wich is saved into "_sites" folder then I call htmlproofer on it to do his magic.
+In `scripts` section above, I first build my static website which is saved into "_sites" folder then I call htmlproofer on it to do his magic.
 
 {% include idea.html content="The entire source-code can be found on <a href='https://github.com/paulbrodner/paulbrodner.github.io/pull/10'>#10</a> merge-request" %}
 
