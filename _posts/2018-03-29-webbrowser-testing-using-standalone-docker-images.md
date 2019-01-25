@@ -2,7 +2,7 @@
 layout: post
 title: WebBrowser Testing using standalone docker images
 date: 2018-03-29 13:00 +0300
-tags: [Java, docker, docker-compose, selenium-standalone]
+tags: [java, docker, docker-compose, selenium-standalone]
 description: Step by step guide to configure your selenium tests to run remotely on a standalone docker container
 ---
 
