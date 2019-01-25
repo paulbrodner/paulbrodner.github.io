@@ -1,6 +1,8 @@
 /* THANKS */
 * Jekyll-Uno
 https://github.com/joshgerdes/jekyll-uno
+* Graphic Resources
+https://www.freepik.com/
 
 * Simple-Jekyll-Search v1.4.1 
 https://github.com/christian-fei/Simple-Jekyll-Search
