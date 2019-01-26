@@ -1,11 +1,15 @@
 ---
 layout: default
 ---
-<h2>Tags:</h2>
-<div class="tags"> 
-{% for tagitem in site.tags  %} 
-  <a href="#{{ tagitem[0] }}">{{  tagitem[0] }}</a>
-{% endfor %}
+{% include tagcloud.html %}
+
+<h1>Tags:</h1>
+<div class="tagcloud">
+  <ul>
+    {% for tagitem in site.tags  %} 
+      <li><a href="#{{ tagitem[0] }}">{{  tagitem[0] }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
 
 <!-- iterate through all tags on the site --> 
