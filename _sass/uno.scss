@@ -1003,15 +1003,15 @@ em {
 
 blockquote {
 	margin: 1em 0;
-	padding: 1em 1em;
+	padding: 2em 0;
 	background: #f8f8f8;
 	border: 1px solid #eeeeee;
 	border-radius: 3px;
 	font-family: "Roboto Slab", serif;
 	font-weight: lighter;
 	font-style: italic;
-	font-size: 14px;
-	text-align: left; }
+	font-size: 1.3em;
+	text-align: center; }
 	blockquote p:last-child {
 		margin-bottom: 0; }
 
@@ -1110,8 +1110,8 @@ pre {
 
 .content-wrapper {
 	z-index: 800;
-	width: 70%;
-	max-width: 100%;
+	width: 60%;
+	max-width: 800px;
 	margin-left: 40%; }
 
 .content-wrapper__inner {
