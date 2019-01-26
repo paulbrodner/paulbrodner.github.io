@@ -1,0 +1,69 @@
+
+{    
+  "work": [
+    {
+      "name": "Ness",
+      "location": "Iasi",
+      "description": "",
+      "position": "QA Automation Architect",
+      "url": "https://www.ness.com/",
+      "logo": "work/ness-logo.png",
+      "startDate": "2016-02",
+      "summary": ""      
+    },
+    {
+      "name": "Ness",
+      "location": "Iasi",
+      "description": "",
+      "position": "Senior Automation Engineer",
+      "url": "https://www.ness.com/",
+      "logo": "work/ness-logo.png",
+      "startDate": "2014-10",
+      "summary": ""      
+    },
+    {
+      "name": "OSF Global Services",
+      "location": "Iasi",
+      "description": "",
+      "position": "QA Automation Team Lead",
+      "url": "https://www.osf-global.com/",
+      "logo": "work/osf-logo.jpeg",
+      "startDate": "2012-03",
+      "summary": ""      
+    },
+    {
+      "name": "OSF Global Services",
+      "location": "Iasi",
+      "description": "",
+      "position": "Ruby on Rails Developer",
+      "url": "https://www.osf-global.com/",
+      "logo": "work/osf-logo.jpeg",
+      "startDate": "2011-05",
+      "summary": ""      
+    },
+    {
+      "name": "OSF Global Services",
+      "location": "Iasi",
+      "description": "",
+      "position": "QA Automation Engineer",
+      "url": "https://www.osf-global.com/",
+      "logo": "work/osf-logo.jpeg",
+      "startDate": "2010-11",
+      "summary": ""      
+    },
+    {
+      "name": "Embarcadero",
+      "location": "Iasi",
+      "description": "",
+      "position": "QA Engineer",
+      "url": "https://www.embarcadero.com/",
+      "logo": "work/emb-logo.png",
+      "startDate": "2008-06",
+      "summary": ""      
+    }
+  ],
+
+  
+  
+  "knows": ["java", "docker", "docker-compose", "selenium", "linux", "shell", "ssh", "AWS S3", "AWS EC2", "AWS VPC", "AWS Route59", "AWS AMIs", "AWS EKS", "CI/CD", "Jenkins", "Bamboo", "Ruby", "Git", "Microsoft Flows", "Scrum", "Quality Assurance", "Test Planning", "Performance Testing", "Test Management", "SQL Server","Test Strategies", "Jira", "JUnit", "TestNG", "Watir", "Cucumber", "TDD","AWS Lambda", "AWS DynamoDB", "MongoDB", "PostgreSQL", "Problem Solving", "JMeter", "TestLink", "Test Rail", "OOP", "Tomcat", "Eclipse", "CSS", "JDBC", "Codding Standards", "Coaching", "Visual Basic", "Delphi", "Database Modeling", "ASP.NET", "IIS", "RSpect", "BDD", "POC", "test automation frameworks", "git", "subversion", "WebDriver", "Kubernetes", "Elasticsearch", "Creative Thinking", "Mind Mapping", "Identifying Patterns or Connections", "Creativity", "Communication", "Self-Taught"]   
+ }
