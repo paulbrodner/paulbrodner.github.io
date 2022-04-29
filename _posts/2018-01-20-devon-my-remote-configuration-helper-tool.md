@@ -5,6 +5,7 @@ date: 2018-01-20 15:47 +0200
 categories: [Tips & Tricks]
 tags: [Ruby, Configuration, SSH]
 description: How I configure remote machines via SSH using devON
+excerpt:  devOn is a Ruby [gem](http://guides.rubygems.org/what-is-a-gem/) that has capability to to run one or many scripts with any configuration
 ---
 A couple of years ago (in [2015](https://www.linkedin.com/in/paulbrodner/) to be precise), I was testing a high availability system configured through multiple cluster nodes.
 There was a standard architecture and infrastructure that I needed to setup prior to my performance test execution: one load balancer, 4 web server nodes configured in a cluster environment, one solr service that will communicate with these nodes, a shared [NTFS](https://en.wikipedia.org/wiki/NTFS) location for repository and one MySQL database.

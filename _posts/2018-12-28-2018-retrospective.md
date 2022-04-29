@@ -4,6 +4,7 @@ title: 2018 one year in ... a retrospective
 date: 2018-12-28 12:54 +0200
 tags: [2018, retrospective]
 description: 2018 Retrospective
+excerpt: 2019 is near the corner, 2018 is now a thing of the past; checkout the highlights of my last year
 ---
 
 2019 is near the corner, 2018 is now ~~a thing of~~ the past; 
