@@ -15,6 +15,6 @@ docker build -t pbrodner-site .
 > this will have a shared volume from host to container, so we can update the site automatically
 
 ```
-docker run -v $(pwd):/site -it -p 4000:4000 pbrodner-site bash
+docker run -v $(pwd):/site -it -p 4000:4000 pbrodner-site
 ```
 * view site under: http://127.0.0.1:4000
