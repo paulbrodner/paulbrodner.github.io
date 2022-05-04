@@ -1,12 +1,14 @@
 <h3>Work Experience Timeline:</h3>
-<p>(starting dates)</p>
+<span>
+    <p>(starting dates - for more details check LinkedIn profile)</p>
+</span>
 <timeline-section>
     <section id="conference-timeline">
         <!-- <div class="timeline-start">graduated</div> -->
         <div class="conference-center-line"></div>
         <div class="conference-timeline-content">
             {% for work in site.data.profile.work %} {% assign id = id | plus: 1 | modulo:2 %}
-                {% if id == 0 %}
+                {% if id == 1 %}
                     <div class="timeline-article">
                         <div class="content-left-container">
                             <span class="timeline-position">
@@ -17,6 +19,18 @@
                                 <p>{{work.summary}}</p>
                             </div>
                         </div>
+                        {% if work.achievemnts %}
+                            <div class="content-right-container">
+                                <div class="content-right">
+                                    <p><i class="icon icon-arrow-left"> </i><strong>Achievements:</strong></p>
+                                    <ul>
+                                    {% for achievement in work.achievemnts %}
+                                        <li><i class="icon icon-star"> </i>{{ achievement }}</li>
+                                    {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endif %}
                         <div class="meta-date">
                             <span class="date">{{ work.startDate }}</span>
                             <span class="month">{{ work.startMonth }}</span>
@@ -33,6 +47,18 @@
                                 <p>{{work.summary}}</p>
                             </div>
                         </div>
+                        {% if work.achievemnts %}
+                            <div class="content-left-container">
+                                <div class="content-left">
+                                    <p align="right"><strong>Achievements:</strong> <i class="icon icon-arrow-right"></i></p>
+                                    <ul>
+                                    {% for achievement in work.achievemnts %}
+                                        <li><i class="icon icon-star"> </i>{{ achievement }}</li>
+                                    {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endif %}
                         <div class="meta-date">
                             <span class="date">{{ work.startDate }}</span>
                             <span class="month">{{ work.startMonth }}</span>

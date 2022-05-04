@@ -11,18 +11,27 @@ layout: page
 <h2>
     Summary</h2>
 <div class="summary">
-    <p><span class="first-letter">I</span> am a Test Automation Architect living in <a href='https://vimeo.com/218521194' target="_blank">Romania</a>. <br>I’ve spent the last {{ site.time | date: '%Y' | minus :2008 }} years designing, developing, testing and implementing professional experience
-        for small, medium and large enterprises in the software automation field.</p>
-    <p><span class="first-letter">M</span>y speciality areas include building test automation frameworks from scratch in an Agile way, automating different manual processes according to stakeholder’s business goals, covering a wide area of E2E QA process
-        and flows from desktop applications to mobile, web applications, APIs, protocols, database - all running in continuous integration environment(s).</p>
-    <p><span class="first-letter">I</span>'m also involved in presales activities, estimations, roadmaps, backlog creation/refinement and ROI calculation.</p>
-    <p><span class="first-letter">I</span> hold a bachelor’s degree in Business Information Technologies (2008), a master’s degree in Management Information Systems (2010) and ISQTB certification since 2009.</p>
-
+    <p><span class="first-letter">I</span> am a self-motivated Test Automation Architect living in <a href='https://vimeo.com/218521194' target="_blank">Romania</a>. In the last <strong>{{ site.time | date: '%Y' | minus :2008 }} years</strong> I've spent my time designing, developing, testing and implementing professional experience for small, medium and large enterprises in the software automation field.</p>
+    {% for sum in site.data.profile.short_intro %}    
+        {% assign firstLetter = sum["intro"] | slice: 0  %}
+        {% assign intro = sum["intro"] | slice: 1, sum["intro"].size  %}
+        <p>
+            <span class="first-letter">{{ firstLetter }}</span>{{ intro }}
+            {% if sum["details"] %}
+            <ul>
+                {% for detail in sum["details"] %} 
+                <li>{{ detail }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </p>
+    {% endfor %}
 </div>
 
 {% include timeline-article.html %}
 
-<h2>Skills/Technologies</h2>
+<h3>Technologies/Skills</h3>
+(my "bubble" world)
 <div class="tagcloud">
     <ul>
         {% for know in site.data.profile.knows %}
@@ -31,5 +40,30 @@ layout: page
     </ul>
 </div>
 
-<h2>Whant to know more?</h2>
+<h3>Awards/Recognitions</h3>
+<section class="post">
+    <table class="table">
+        <thead>
+            <tr>
+              <th scope="col">When</th>
+              <th scope="col">What</th>
+              <td scope="col">Feedback</td>
+            </tr>
+          </thead>
+          <tbody>
+            {% assign awards = site.data.profile.awards |  reverse  %}
+            {% for award in awards %}
+            <tr>
+                <td>{{award["when"] }}</td>
+                <td>{{award["what"] }}</td>
+                {% if award["review"] %}
+                <td><div class="timeline-article"><p>{{award["review"] }}</p></div></td>
+                {% endif %}
+                
+            </tr>
+            {% endfor %}
+          </tbody>
+    </table>
+</section>
+<h3>Whant to know more?</h3>
 <blockquote>Checkout my contact details - I bet you will find them !</blockquote>

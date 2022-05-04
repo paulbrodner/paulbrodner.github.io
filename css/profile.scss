@@ -73,11 +73,13 @@
 .timeline-article .content-left,
 .timeline-article .content-right {
   position: relative;
+  text-align: justify;
   width: auto;
   border: 1px solid #ddd;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,.03);
   padding: 27px 25px;
+  font-size: small;
 }
 .timeline-article p {
   margin: 0 0 0 0px;
