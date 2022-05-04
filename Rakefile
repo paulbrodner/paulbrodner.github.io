@@ -1,6 +1,11 @@
 desc "start blog locally"
 task :start do     
-    sh 'bundle exec jekyll serve'
+    sh 'bundle exec jekyll serve --force_polling -H 0.0.0.0 -P 4000'
+end
+
+desc "build"
+task :build do     
+    sh "bundle exec jekyll build"
 end
 
 desc "test"

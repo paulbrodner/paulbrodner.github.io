@@ -1,69 +1,205 @@
 
-{    
+{ 
+  "short_intro": [
+    
+    {"intro": "My area of expertise:", "details": [
+      "building test automation frameworks from scratch in an Agile way (ruby, python, java, .NET, C#) -> identify significant aspects of client requirements that drive the framework architecture",
+      "automating different manual processes according to stakeholder’s business goals, covering a wide area of E2E QA process and flows from desktop applications to mobile, web applications, APIs, protocols, database - all running in continuous integration environment(s).",
+      "data analytics (<a href='https://numpy.org/' target=\"_blank\">numpy</a>)",
+      "performance, security testing, ethical hacking",
+      "devOps",
+      "provide test automation consultancy, mentoring team members",
+      "identify potential problems in advance and work with the teams to resolve them",
+      "communicate and document technical matters using <a href='https://en.wikipedia.org/wiki/Architecturally_significant_requirements' target=\"_blank\">ASR (Architecturally significant requirements)</a>"
+
+    ]},
+    {"intro": "I'm also involved in presales activities, estimations, roadmaps, backlog creation/refinement and ROI calculation."},
+    {"intro": "I hold a bachelor’s degree in Business Information Systems (2008), ISQTB certification since 2009 and a master’s degree in Management Information Systems (2010)"}
+  ],
+  
   "work": [
-    {
-      "name": "Ness",
-      "location": "Iasi",
-      "description": "",
-      "position": "QA Automation Architect",
-      "url": "https://www.ness.com/",
-      "logo": "work/ness-logo.png",
-      "startDate": "2016-02",
-      "summary": ""      
-    },
-    {
-      "name": "Ness",
-      "location": "Iasi",
-      "description": "",
-      "position": "Senior Automation Engineer",
-      "url": "https://www.ness.com/",
-      "logo": "work/ness-logo.png",
-      "startDate": "2014-10",
-      "summary": ""      
-    },
-    {
-      "name": "OSF Global Services",
-      "location": "Iasi",
-      "description": "",
-      "position": "QA Automation Team Lead",
-      "url": "https://www.osf-global.com/",
-      "logo": "work/osf-logo.jpeg",
-      "startDate": "2012-03",
-      "summary": ""      
-    },
-    {
-      "name": "OSF Global Services",
-      "location": "Iasi",
-      "description": "",
-      "position": "Ruby on Rails Developer",
-      "url": "https://www.osf-global.com/",
-      "logo": "work/osf-logo.jpeg",
-      "startDate": "2011-05",
-      "summary": ""      
-    },
-    {
-      "name": "OSF Global Services",
-      "location": "Iasi",
-      "description": "",
-      "position": "QA Automation Engineer",
-      "url": "https://www.osf-global.com/",
-      "logo": "work/osf-logo.jpeg",
-      "startDate": "2010-11",
-      "summary": ""      
-    },
     {
       "name": "Embarcadero",
       "location": "Iasi",
-      "description": "",
       "position": "QA Engineer",
       "url": "https://www.embarcadero.com/",
       "logo": "work/emb-logo.png",
       "startDate": "2008-06",
-      "summary": ""      
+      "startYear": "2008",
+      "startMonth": "JUN",
+      "summary": "Starting my careen in testing as a QA Engineer. Here I've learned how to Design, Develops and execute Tests including common and uncommon use cases, how to do performance testing, stress and stability testing, in order to fulfill the quality of the software. At Embarcadero I've learned <a href='https://en.wikipedia.org/wiki/Delphi_(software)' target=\"_blank\">Delphi</a> as the main programming language to automate <a href='https://docs.embarcadero.com/products/er_studio/' target=\"_blank\">ERStudio Data Architect</a>. <br>One year later (2009), I've taken the <a href='https://www.istqb.org' target=\"_blank\"'>ISTQB Certification (Foundation Level).</a>"      
+    },
+    {
+      "name": "OSF Global Services",
+      "location": "Iasi",
+      "position": "QA Automation Engineer",
+      "url": "https://www.osf-global.com/",
+      "logo": "work/osf-logo.jpeg",
+      "startDate": "2010-11",
+      "startYear": "2010",
+      "startMonth": "NOV",
+      "summary": "After two years in the field, I continue working @ OSF Global Services (now <a href='https://osf.digital/' target=\"_blank\">OSF Digital</a>). Here I started to work intensively with Ruby language to implement basic framework for testing Web Application for differed customers."      
+    },
+    {
+      "name": "OSF Global Services",
+      "location": "Iasi",
+      "position": "Ruby on Rails Developer",
+      "url": "https://www.osf-global.com/",
+      "logo": "work/osf-logo.jpeg",
+      "startDate": "2011-05",
+      "startYear": "2011",
+      "startMonth": "MAY",
+      "summary": "I love ruby as programming language so I've started to work as a RoR (Ruby and Rails) developer for ~1.5 years. Here I've started to practical use <a href='https://en.wikipedia.org/wiki/Behavior-driven_development' target=\"_blank\">BDD (Behaviour Driven Development)</a> to implement and finalize a Web Application similar to Dropbox."      
+    },
+    {
+      "name": "OSF Global Services",
+      "location": "Iasi",
+      "position": "QA Automation Team Lead",
+      "url": "https://www.osf-global.com/",
+      "logo": "work/osf-logo.jpeg",
+      "startDate": "2012-03",
+      "startYear": "2012",
+      "startMonth": "MAR",
+      "summary": "There were multiple projects outsourced by our company where automation testing was required to speed up development cycle. In 2012 I've become a <strong>QA Team Lead</strong> managing more than four projects simultaneous.<br>I acted as a key point for all QA aspects of releases, providing formal feedback based on best practices. For my automation tests I've used Ruby as programming language.<br>Coach, solve work problems and perform internal training mostly on automation side was part of the job."      
+    },
+    {
+      "name": "Ness",
+      "location": "Iasi",
+      "position": "Senior Automation Engineer",
+      "url": "https://www.ness.com/",
+      "logo": "work/ness-logo.png",
+      "startDate": "2014-10",
+      "startYear": "2014",
+      "startMonth": "OCT",
+      "summary": "New company, new oportunities ahead!<br>Here, I've started to develop and implement tests in <a href='https://en.wikipedia.org/wiki/Java_(programming_language)' target=\"_blank\">Java</a> for a big customer (Alfresco now <a href='https://www.alfresco.com/' target=\"_blank\">Hyland</a>). Their powerfull, highly scalable enterprise content management (ECM) solution needed some love in terms of testing, to validate differed configuration, integration with productivity applications like Office, Google Docs, <a href='https://salesforce.com/' target=\"_blank\">Salesforce</a>, to test the deployment or even the SDK compatibilities between tests. <br> As a Senior Automation Engineer I was responsible of maintaining and bringing up to date thousands of legacy tests that were britle sometimes, took long time to complete, or was implemented using differed anti-patterns."      
+    },
+    {
+      "name": "Ness",
+      "location": "Iasi",
+      "position": "QA Automation Architect",
+      "url": "https://www.ness.com/",
+      "logo": "work/ness-logo.png",
+      "startDate": "2016-02",
+      "startYear": "2016",
+      "startMonth": "FEB",
+      "summary": "Same company, same Alfresco client, same testing issues. A need for a new tool arised, so I took the challenging position as a QA Automation Architect to build <a href='2019/tas/'>TAS</a>. <br>In my new role, I've started to provide technical leadership and strategic direction on automation testing and even being involved in implementing and adopting <a href='https://en.wikipedia.org/wiki/Capability_Maturity_Model_Integration' target=\"_blank\">CMMI (Capability Maturity Model Integration)</a> processes within Ness Iasi.<br>I've worked closely with with Solutioning team, in order to define and implement POCs for different testing problems, where I've defined differed cost/benefits reports, found alternative technical solutions, identified resource requirements, defined project estimates and also technical specification.<br> I was the point of contact in Romania on Test Automation side." 
+    },
+    {
+      "name": "Signant Health",
+      "location": "Iasi",
+      "position": "Test Automation Architect",
+      "url": "https://www.signanthealth.com/",
+      "logo": "work/sh-logo.png",
+      "startDate": "2019-12",
+      "startYear": "2019",
+      "startMonth": "DEC",
+      "summary": "Before the <a href='https://en.wikipedia.org/wiki/COVID-19_pandemic' target=\"_blank\">global pandemic</a> I've joined Signant Health, to continue my path as a Test Automation Architect but in a  differed, exciting industry. <br>Here I am part of a company that enables clinical trials across traditional, virtual, and hybrid designs, who helped <a href='https://www.pfizer.com/' target=\"_blank\">Pfizer</a> to develop the COVID-19 vaccine in record time through technology and innovations.",
+      "achievemnts": [
+        "Build Analytics Dashboard (Dash, Panda) -> Analyze legacy test results in real time, give us a high level overview of the tests passed, duration, clustering of defects, where we can start fixing problems with big impact, capability of comparing runs, identify flaky tests",
+        "revive performance testing ->  build a tool that can run milions of users to load test a particular app (all in AWS, deployed with Terraform)",
+        "migrate jobs from old jenkins to latest version -> pipeline as code",
+        "implement Disaster Recovery tests -> test how system is recovering from disater(s)",
+        "fast reliable feedback on regression tests -> reduce duration from 13 hours to 3 hours, increase passing percentage to 99%",
+        "build a python package for integrating test with Jira XRAY -> automatic generating test cases in XRay, updating status of execution",
+        "enhance Docker images used in tests ->  reducing size from 4GB to 600MB - cutting costs of download, fast feedback enabled",
+        "reduce technical dept -> migrate code, pipelines from legacy source code repository to new version",
+        "AWS Lift & Shift effort -> move code from inhouse infrastrucute towards the cloud",
+        "build automatic mechanism to identify bugs from product OR test environment -> testers will not spend hours to identify the root cause of a failure"
+      ]
     }
+    
   ],
+  
+  "knows": [
+    "python", 
+    "java", 
+    "docker", 
+    "docker-compose", 
+    "selenium", 
+    "linux", 
+    "shell", 
+    "ssh", 
+    "AWS S3", 
+    "AWS EC2", 
+    "AWS Route59", 
+    "AWS AMIs", 
+    "AWS EKS", 
+    "CI/CD", 
+    "Terraform",
+    "Packer",
+    "Jenkins", 
+    "Model Based Testing",
+    "Bamboo", 
+    "Ruby", 
+    "Git", 
+    "Microsoft Flows", 
+    "Scrum", 
+    "Quality Assurance", 
+    "Test Planning", 
+    "Performance Testing", 
+    "Test Management", 
+    "SQL Server",
+    "Test Strategies", 
+    "Jira", 
+    "JUnit", 
+    "TestNG", 
+    "Watir", 
+    "Cucumber", 
+    "TDD",
+    "AWS Lambda", 
+    "AWS DynamoDB", 
+    "MongoDB", 
+    "PostgreSQL", 
+    "JMeter", 
+    "TestLink", 
+    "Test Rail", 
+    "OOP", 
+    "Tomcat", 
+    "Eclipse", 
+    "CSS", 
+    "JDBC", 
+    "Codding Standards", 
+    "Coaching", 
+    "Visual Basic", 
+    "Delphi", 
+    "Database Modeling", 
+    "ASP.NET", 
+    "IIS", 
+    "RSpect", 
+    "BDD", 
+    "POC", 
+    "test automation frameworks", 
+    "git", 
+    "subversion", 
+    "WebDriver", 
+    "Kubernetes", 
+    "Elasticsearch", 
+    "Creative Thinking", 
+    "Mind Mapping", 
+    "Identifying Patterns or Connections", 
+    "Problem Solving", 
+    "Creativity", 
+    "Communication", 
+    "Teamwork",
+    "Self-Taught",
+    "Data-Science",
+    "numpy",
+    "jupyter",
+    "spring-boot",
+    "C#",
+    ".NET",
+    "Dash",
+    "plotly",
+    "Contract Testing"
+  ] ,
 
-  
-  
-  "knows": ["java", "docker", "docker-compose", "selenium", "linux", "shell", "ssh", "AWS S3", "AWS EC2", "AWS VPC", "AWS Route59", "AWS AMIs", "AWS EKS", "CI/CD", "Jenkins", "Bamboo", "Ruby", "Git", "Microsoft Flows", "Scrum", "Quality Assurance", "Test Planning", "Performance Testing", "Test Management", "SQL Server","Test Strategies", "Jira", "JUnit", "TestNG", "Watir", "Cucumber", "TDD","AWS Lambda", "AWS DynamoDB", "MongoDB", "PostgreSQL", "Problem Solving", "JMeter", "TestLink", "Test Rail", "OOP", "Tomcat", "Eclipse", "CSS", "JDBC", "Codding Standards", "Coaching", "Visual Basic", "Delphi", "Database Modeling", "ASP.NET", "IIS", "RSpect", "BDD", "POC", "test automation frameworks", "git", "subversion", "WebDriver", "Kubernetes", "Elasticsearch", "Creative Thinking", "Mind Mapping", "Identifying Patterns or Connections", "Creativity", "Communication", "Self-Taught"]   
+  "awards": [
+    {"when": "Jan 2010", "what": "Employee of Quarter II @EMBARCADERO"},
+    {"when": "Jan 2012", "what": "Top Bug Hunter @OSF GLOBAL SERVICES"},
+    {"when": "March 2021", "what": "Trial Awards Special Mention! @SIGNANT HEALTH", "review": "For the huge impact on TrialConsent Q&A. Outstanding job with creating Disaster Recovery test, performance tests, migration of test automation to AWS and Python3 upgrade. You act lie a real enabler for the Trial Consent Team and your work is invaluable for us!<br>Tudo Cozac (Director of R&D)"},
+    {"when": "September 2021", "what": "Trial Awards @SIGNANT HEALTH", "review": "Paul your work on Regression and Testing Architecture is outstanding and has huge impact on Trial Consent. For amazing work on CI pipeline migration. For beign always present, always helping, always habing the solution for everithing. For excellent improvement on precondition data creation, for overall QA team guidance (and not only).<br>Tudo Cozac (Director of R&D)"},
+    {"when":"September 2021", "what": "Team Player @SIGNANT HEALTH", "review": "Paul, your involvement into the NRF framework will surely make it a great success. Thanks! <br>(Director R&D Romania)"},
+    {"when":"January 2022", "what": "Team Player @SIGNANT HEALTH", "review":"Great work with L&S Production cut-over testing. Well prepared testing and professionally done work. Thank you! <br>(VP Testing Service)"}
+  ]
+
  }

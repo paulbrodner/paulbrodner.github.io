@@ -4,6 +4,7 @@ title: First step first
 date: 2017-12-13 12:11 +0200
 categories: [Tutorials, Tips & Tricks]
 comments: false
+excerpt: first step first
 ---
 
 All future blog posts will be structured on differed [categories](/categories) and [tags](/tags).

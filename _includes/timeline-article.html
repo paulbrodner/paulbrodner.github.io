@@ -1,46 +1,73 @@
 <h3>Work Experience Timeline:</h3>
-<p>(starting dates)</p>
-<div class="row">
-    <div class="timeline">
-        <section class="main-timeline-section">
-            <div class="timeline-start"></div>
-            <div class="conference-center-line"></div>
-            <div class="conference-timeline-content">
-                {% for work in site.data.profile.work %} {% assign id = id | plus: 1 | modulo:2 %} {% if id == 0 %}
-                <div class="timeline-article timeline-article-top">
-                    <div class="content-date">
-                        <span>{{ work.startDate }}</span>
-                    </div>
-                    <div class="meta-date"></div>
-                    <div class="content-box">
-                            <p>
-                                <div class="work">
-                                    <img src="{{ site.baseurl }}/images/{{work.logo}}" alt="{{ work.name }}">
-                                    <a href="{{ work.url }}" target="_blank">{{ work.name }}</a>
-                                </div>
-                            </p>
-                            <p>{{ work.position }}</p>
-                    </div>
-                </div>
-                {% else %}
-                <div class="timeline-article timeline-article-bottom">
-                    <div class="content-date">
-                        <span>{{ work.startDate }}</span>
-                    </div>
-                    <div class="meta-date"></div>
-                    <div class="content-box">
-                        <p>
-                            <div class="work">
-                                <img src="{{ site.baseurl }}/images/{{work.logo}}" alt="{{ work.name }}">
-                                <a href="{{ work.url }}" target="_blank">{{ work.name }}</a>
+<span>
+    <p>(starting dates - for more details check LinkedIn profile)</p>
+</span>
+<timeline-section>
+    <section id="conference-timeline">
+        <!-- <div class="timeline-start">graduated</div> -->
+        <div class="conference-center-line"></div>
+        <div class="conference-timeline-content">
+            {% for work in site.data.profile.work %} {% assign id = id | plus: 1 | modulo:2 %}
+                {% if id == 1 %}
+                    <div class="timeline-article">
+                        <div class="content-left-container">
+                            <span class="timeline-position">
+                                {{work.position}}
+                                (<a href="{{ work.url }}" target="_blank">{{ work.name }} <img class="work-logo" src="{{ site.baseurl }}/images/{{work.logo}}" alt="{{ work.name }}"></a>)
+                            </span>
+                            <div class="content-left">
+                                <p>{{work.summary}}</p>
                             </div>
-                        </p>
-                        <p>{{ work.position }}</p>
+                        </div>
+                        {% if work.achievemnts %}
+                            <div class="content-right-container">
+                                <div class="content-right">
+                                    <p><i class="icon icon-arrow-left"> </i><strong>Achievements:</strong></p>
+                                    <ul>
+                                    {% for achievement in work.achievemnts %}
+                                        <li><i class="icon icon-star"> </i>{{ achievement }}</li>
+                                    {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endif %}
+                        <div class="meta-date">
+                            <span class="date">{{ work.startDate }}</span>
+                            <span class="month">{{ work.startMonth }}</span>
+                        </div>
                     </div>
-                </div>
-                {% endif %} {% endfor %}
-            </div>
-            <div class="timeline-end"></div>
-        </section>
-    </div>
-</div>
+                {% else %}
+                    <div class="timeline-article">
+                        <div class="content-right-container">
+                            <span class="timeline-position">
+                                {{work.position}}
+                                (<a href="{{ work.url }}" target="_blank">{{ work.name }} <img class="work-logo" src="{{ site.baseurl }}/images/{{work.logo}}" alt="{{ work.name }}"></a>)
+                            </span>
+                            <div class="content-right">
+                                <p>{{work.summary}}</p>
+                            </div>
+                        </div>
+                        {% if work.achievemnts %}
+                            <div class="content-left-container">
+                                <div class="content-left">
+                                    <p align="right"><strong>Achievements:</strong> <i class="icon icon-arrow-right"></i></p>
+                                    <ul>
+                                    {% for achievement in work.achievemnts %}
+                                        <li><i class="icon icon-star"> </i>{{ achievement }}</li>
+                                    {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        {% endif %}
+                        <div class="meta-date">
+                            <span class="date">{{ work.startDate }}</span>
+                            <span class="month">{{ work.startMonth }}</span>
+                        </div>
+                    </div>    
+                {% endif %}
+            {% endfor %}
+
+        </div>
+        <!-- <div class="timeline-end"><a href="https://www.linkedin.com/in/paulbrodner">linkedin</a></div> -->
+    </section>
+</timeline-section>
