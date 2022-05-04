@@ -3,7 +3,7 @@ layout: post
 title: Defining my static blog with Github Pages
 date: 2017-12-13 12:59 +0200
 categories: [Tutorials]
-tags: [Jekyllrb, ruby]
+tags: [ruby]
 excerpt: Defining my static blog with Github Pages
 ---
 Yes, that's right, you can use [Github Pages](https://pages.github.com) to host your personal or organization projects directly on Github.
