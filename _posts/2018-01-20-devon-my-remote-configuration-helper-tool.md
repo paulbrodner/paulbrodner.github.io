@@ -3,7 +3,7 @@ layout: post
 title: devON - my remote configuration tool
 date: 2018-01-20 15:47 +0200
 categories: [Tips & Tricks]
-tags: [ruby, SSH]
+tags: [ruby, ssh]
 description: How I configure remote machines via SSH using devON
 excerpt:  devOn is a Ruby [gem](http://guides.rubygems.org/what-is-a-gem/) that has capability to to run one or many scripts with any configuration
 ---
