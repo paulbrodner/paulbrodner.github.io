@@ -28,7 +28,7 @@ The end solution will be an executable python package that will tell me when to 
 * I can configure after how many minutes/hours should I take the break
     * add a GUI just for fun - how this works
 * The notification will be:
-    * a random [joke](http://api.icndb.com/jokes/random ) from
+    * a random [joke](http://api.icndb.com/jokes/random )
     * a random image taken from [unsplash](https://source.unsplash.com/random) that will be displayed in a full screen form
 * when I press ESC the image will disappear
 * the application will run in the background    
@@ -55,7 +55,7 @@ No one has ever pair-programmed with Chuck Norris and lived to tell about it.
 
 This is the full screen image that will show a random image
 ![](/images/posts/take_a_break.png)
-It has also a the joke displayed at the bottom and also some menus to access the settings dialog:
+It has also a joke displayed at the bottom and also some menus to access the settings dialog:
 
 ![](/images/posts/take_a_break-settings.png)
 Here I can update the link to the url resource and also the reminder alert
