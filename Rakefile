@@ -19,6 +19,11 @@ task :post do
     puts "What is the name of this new post?"
     post = STDIN.gets.chomp
     sh "bundle exec jekyll post #{post}"
+    puts "
+categories: [Tips & Tricks]
+tags: [tag1, tag2]
+comments: false
+excerpt: INTRODUCTION"
 end
 
 
