@@ -10,10 +10,10 @@ excerpt: Simple REST API with NodeJS that will store/retrieve data to/from SQLit
 
 I like to keep track of the test environments that I'm using, what code is deployed there, from what branch, the git SHA, the date when the environment what created/updated and so on.
 
-We can take this information from CI or other tools but somethimes these doesn't provide all the necessary information.
+We can take this information from CI or other tools but sometimes these doesn't provide all the necessary information.
 
 # The Project
-I will like to have a simple REST API that will ingest some information that I send to them and store it a database.
+I would like to have a simple REST API that will digest some information that I send to them and store it a database.
 >If you want to see the code, check this out: [api_node_template](https://github.com/paulbrodner/api_node_template)
 
 #### Functionalities:
@@ -25,7 +25,7 @@ I will like to have a simple REST API that will ingest some information that I s
 
 
 ##### 1) REST API with CRUD capabilities
-> I've chosen NodeJS with Express for my minimalist REST api experience
+> I've chosen NodeJS with Express for my minimalist REST-API experience
 
 First I've created a `package.json` and then I've `npm install` the dependencies.
 ```javascript
@@ -49,7 +49,7 @@ First I've created a `package.json` and then I've `npm install` the dependencies
   }
 }
 ```
-To simplify things I've created one [app.js](https://github.com/paulbrodner/api_node_template/blob/master/app.js) to handle all my REST functionalities in one place. (this can be enhanced further more)
+To simplify things, I've created one [app.js](https://github.com/paulbrodner/api_node_template/blob/master/app.js) to handle all my REST functionalities in one place. (this can be enhanced further more)
 
 ##### 2) can store data to a database
 For database I will go with [SQLite](https://www.sqlite.org/index.html) because it is fast, self-contained and high-reliable.
@@ -59,7 +59,7 @@ When the application is started, the database schema is created (see [app.js](ht
 ##### 3) can display data into a simple dashboard
 For simple HTML dashboard I've chosen a robust, elegant, feature rich template engine called [pug](https://pugjs.org/api/getting-started.html) 
 
-Using pug, I can create the layout and the dashboard page with ease. See [views](https://github.com/paulbrodner/api_node_template/tree/master/views) folder and for CSS, the well known [Bootstrap](https://getbootstrap.com/)
+Using pug, I can create the layout and the dashboard page with ease. See [views](https://github.com/paulbrodner/api_node_template/tree/master/views) folder and for CSS, the well-known [Bootstrap](https://getbootstrap.com/)
 
 ##### 4) containerized so I can deploy it somewhere
 Yeah, Docker all the way, keeping in mind that the final image should be small. 
