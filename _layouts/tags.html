@@ -1,17 +1,8 @@
 ---
 layout: default
 ---
-{% include tagcloud.html %}
 
 <h1>Tags:</h1>
-<div class="tagcloud">
-  <ul>
-    {% for tagitem in site.tags  %} 
-      <li><a href="#{{ tagitem[0] }}">{{  tagitem[0] }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
-
 <!-- iterate through all tags on the site --> 
 {% for tagitem in site.tags %} 
   <!-- for each tag, create an anchor by using the tag name as an id --> 
