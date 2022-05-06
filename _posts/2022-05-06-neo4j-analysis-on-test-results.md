@@ -8,7 +8,7 @@ comments: false
 excerpt: Analise your test results data using a graph database
 ---
 
-# Use Case
+## Use Case
 Test results executed in a Jenkins job or from local machine can be stored and analised using a graph based database as Neo4j.
 **Why:** because is much easier and intuitive to represent data usign graphs.
 
