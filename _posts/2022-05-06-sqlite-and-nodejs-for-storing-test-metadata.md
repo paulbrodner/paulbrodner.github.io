@@ -16,7 +16,7 @@ We can take this information from CI or other tools but sometimes these doesn't 
 I would like to have a simple REST API that will digest some information that I send to them and store it a database.
 >If you want to see the code, check this out: [api_node_template](https://github.com/paulbrodner/api_node_template)
 
-#### Functionalities:
+### Functionalities:
 * 1) REST API with CRUD capabilities -> simple as it gets
 * 2) can store data to a database
 * 3) can display data into a simple dashboard
@@ -101,7 +101,18 @@ $ docker images | grep paulbrodner
 paulbrodner/environments  latest   d9614f03498e   56 minutes ago      53.4MB
 ```
 
+### Usage:
 
+```ruby
+# create some data (this is a simple payload, the schema can be altered or even a NOSQL database can be used to store flexible data)
+curl -X POST http://localhost:9000/ \
+     -H "Content-Type: application/json" \
+     -d '{ "name":"myjob", "author": "pbrodner", "branch": "master"}'
 
+# retrieve data
+$ curl http://localhost:9000?branch=master
+$ curl http://localhost:8000?branch=master&author=pbrodner
 
-
+# delete data
+curl -X DELETE http://localhost:9000/myjob
+```
