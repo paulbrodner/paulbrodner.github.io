@@ -3,7 +3,7 @@ layout: post
 title: Take-a-Break python package
 date: 2022-05-04 15:09 +0000
 categories: [Tips & Tricks]
-tags: [docker]
+tags: [python]
 comments: true
 excerpt: Experiment with python packages, setup and released to community
 ---
