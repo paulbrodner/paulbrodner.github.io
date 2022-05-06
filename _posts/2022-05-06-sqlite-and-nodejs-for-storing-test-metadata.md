@@ -24,7 +24,7 @@ I would like to have a simple REST API that will digest some information that I 
   * and small
 
 
-##### 1) REST API with CRUD capabilities
+##### **1) REST API with CRUD capabilities**
 > I've chosen NodeJS with Express for my minimalist REST-API experience
 
 First I've created a `package.json` and then I've `npm install` the dependencies.
@@ -51,17 +51,17 @@ First I've created a `package.json` and then I've `npm install` the dependencies
 ```
 To simplify things, I've created one [app.js](https://github.com/paulbrodner/api_node_template/blob/master/app.js) to handle all my REST functionalities in one place. (this can be enhanced further more)
 
-##### 2) can store data to a database
+##### **2) can store data to a database**
 For database I will go with [SQLite](https://www.sqlite.org/index.html) because it is fast, self-contained and high-reliable.
 
 When the application is started, the database schema is created (see [app.js](https://github.com/paulbrodner/api_node_template/blob/master/app.js))
 
-##### 3) can display data into a simple dashboard
+##### **3) can display data into a simple dashboard**
 For simple HTML dashboard I've chosen a robust, elegant, feature rich template engine called [pug](https://pugjs.org/api/getting-started.html) 
 
 Using pug, I can create the layout and the dashboard page with ease. See [views](https://github.com/paulbrodner/api_node_template/tree/master/views) folder and for CSS, the well-known [Bootstrap](https://getbootstrap.com/)
 
-##### 4) containerized so I can deploy it somewhere
+##### **4) containerized so I can deploy it somewhere**
 Yeah, Docker all the way, keeping in mind that the final image should be small. 
 For this I've used multi-stage build with docker.
 
