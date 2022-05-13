@@ -15,12 +15,16 @@ author:
   linkedin_username:  paulbrodner
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ''
       type: 'posts'
     values:
-        layout: 'post'
+      layout: 'post'
+  # https://jekyllrb.com/docs/static-files/
+  - scope:
+      path: "assets/html"
+    values:
+      html: true
 
 # Build settings
 destination: _site
