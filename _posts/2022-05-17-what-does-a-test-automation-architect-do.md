@@ -14,4 +14,4 @@ Checkout my insights around these questions bellow all grouped in a beautiful ma
 <iframe src="../../assets/html/what-a-ta-do.html" height="900px" width="100%" allowfullscreen="" frameborder="0">
 </iframe>
 
->The map was generated from a Markdown file using this beutiful tool: [markmap.js](https://markmap.js.org/) (created by https://github.com/gera2ld)
+>The map was generated from a [Markdown](https://gist.github.com/paulbrodner/2629e883e9e5147e639aa071a09ccf12) file using this beutiful tool: [markmap.js](https://markmap.js.org/) (created by https://github.com/gera2ld)
