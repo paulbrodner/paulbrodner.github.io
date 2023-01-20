@@ -7,7 +7,7 @@
         <!-- <div class="timeline-start">graduated</div> -->
         <div class="conference-center-line"></div>
         <div class="conference-timeline-content">
-            {% for work in site.data.profile.work %} {% assign id = id | plus: 1 | modulo:2 %}
+            {% for work in site.data.profile.work reversed %} {% assign id = id | plus: 1 | modulo:2 %}
                 {% if id == 1 %}
                     <div class="timeline-article">
                         <div class="content-left-container">

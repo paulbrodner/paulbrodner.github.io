@@ -7,13 +7,14 @@
       "automating different manual processes according to stakeholder’s business goals, covering a wide area of E2E QA process and flows from desktop applications to mobile, web applications, APIs, protocols, database - all running in continuous integration environment(s).",
       "data analytics (<a href='https://numpy.org/' target=\"_blank\">numpy</a>)",
       "performance, security testing, ethical hacking",
-      "devOps",
+      "devOps, virtualisation",
       "provide test automation consultancy, mentoring team members",
       "identify potential problems in advance and work with the teams to resolve them",
-      "communicate and document technical matters using <a href='https://en.wikipedia.org/wiki/Architecturally_significant_requirements' target=\"_blank\">ASR (Architecturally significant requirements)</a>"
+      "communicate and document technical matters using <a href='https://en.wikipedia.org/wiki/Architecturally_significant_requirements' target=\"_blank\">ASR (Architecturally significant requirements)</a>",
+      "research on artificial inteligence"
 
     ]},
-    {"intro": "I'm also involved in presales activities, estimations, roadmaps, backlog creation/refinement and ROI calculation."},
+    {"intro": "I'm also involved in pre-sales activities, estimations, roadmaps, backlog creation/refinement and ROI calculation."},
     {"intro": "I hold a bachelor’s degree in Business Information Systems (2008), ISQTB certification since 2009 and a master’s degree in Management Information Systems (2010)"}
   ],
   
@@ -190,7 +191,10 @@
     ".NET",
     "Dash",
     "plotly",
-    "Contract Testing"
+    "Contract Testing",
+    "security testing", 
+    "web penetration testing",
+    "Capture the Flag (CTF) challenges"
   ] ,
 
   "awards": [
