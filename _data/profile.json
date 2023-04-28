@@ -200,6 +200,21 @@
     {"when": "September 2021", "what": "Trial Awards @SIGNANT HEALTH", "review": "Paul your work on Regression and Testing Architecture is outstanding and has huge impact on Trial Consent. For amazing work on CI pipeline migration. For beign always present, always helping, always habing the solution for everithing. For excellent improvement on precondition data creation, for overall QA team guidance (and not only).<br>Tudo Cozac (Director of R&D)"},
     {"when":"September 2021", "what": "Team Player @SIGNANT HEALTH", "review": "Paul, your involvement into the NRF framework will surely make it a great success. Thanks! <br>(Director R&D Romania)"},
     {"when":"January 2022", "what": "Team Player @SIGNANT HEALTH", "review":"Great work with L&S Production cut-over testing. Well prepared testing and professionally done work. Thank you! <br>(VP Testing Service)"}
+  ],
+
+  "certifications": [
+    {"img": "/images/certificates/sec-journey-green-belt-web-app.png", "description": "Green belt for developers that specialize in Web Application Security Testing."},
+    {"img": "/images/certificates/sec-journey-green-belt-api-testing.png", "description": "Green belt for developers and operations that focus on API."},
+    {"img": "/images/certificates/sec-journey-yellow-belt.png", "description": "Security Yellow Belt gives developers an in-depth understanding of the principles, tools, and processes that will keep your products secure."},    
+    {"img": "/images/certificates/sec-journey-white-belt.png", "description": "Security White Belt provides a basic security vocabulary and a solid foundation that will improve communication and prioritize security in your thinking."},    
+    {"img": "/images/certificates/cicd-with-jenkins.png", "description": "Use Jenkins to perform Continuous Integration within your Software Development Lifecycle Install Jenkins using docker<br> Configure Jenkins “The DevOps way”, using Docker, Jobs DSL and Jenkins Pipelines<br>Use plugins to integrate Jenkins with popular development software Configure the authentication and authorization options to tighten security on your Jenkins UI"},    
+    {"img": "/images/certificates/elephant-carpaccio.png", "description": "'How to slice that little problem into 15-20 growth stages, which reduce risk, deliver value, produce income, provide market learning points, and allow pivoting the business all with the smallest energy'"},
+    {"img": "/images/certificates/productivity.png", "description": " Productivity strategies you can start using today and the best tools that will help you become super productive"},
+    {"img": "/images/certificates/ethical-hacking-beginers.png", "description": "Dive into ethical hacking"},    
+    {"img": "/images/certificates/ethical-hacking.png", "description": "Hands-on ethical hacking"},    
+    {"img": "/images/certificates/web-sec.png", "description": "Learn Penetration Testing from scratch to become a bug bounty hunter and web security tester"},    
+    {"img": "/images/certificates/aws-technical-profesional.png", "description": "This course provides AWS Partners with fundamental, technical knowledge of AWS cloud computing, global infrastructure, services, common solutions, migration, security, and compliance."}
+
   ]
 
  }
