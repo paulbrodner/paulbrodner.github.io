@@ -41,6 +41,27 @@ layout: page
     </ul>
 </div>
 
+<h3>Certifications</h3>
+<section class="post">
+    <table class="table">
+        <thead>
+            <tr>
+              <th scope="col">Certificate</th>              
+              <td scope="col">Description</td>
+            </tr>
+          </thead>
+          <tbody>
+            {% assign certifications = site.data.profile.certifications  %}
+            {% for certificate in certifications %}
+            <tr>
+                <td><img src="{{ site.baseurl }}{{ certificate['img'] }}" width="50%" height="50%"></td>
+                <td><div class="timeline-article"><p>{{certificate["description"] }}</p></div></td>                
+            </tr>
+            {% endfor %}
+          </tbody>
+    </table>
+</section>
+
 <h3>Awards/Recognitions</h3>
 <section class="post">
     <table class="table">
