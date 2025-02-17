@@ -4,7 +4,7 @@ title: Select Star
 date: 2023-01-03 09:52 +0000
 comments: false
 categories: [Accelerators]
-tags: [go, test]
+tags: [go, testing, cli]
 description: select-star - a CLI tool written in Golang for.
 excerpt: Last year (2022) I've started to learn [Go](https://go.dev/) and how you can achieve that easily? well …start building something with it!
 ---

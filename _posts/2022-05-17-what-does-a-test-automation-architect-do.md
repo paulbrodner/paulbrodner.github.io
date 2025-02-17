@@ -2,7 +2,7 @@
 layout: post
 title: What does a Test Automation Architect do?
 date: 2022-05-17 09:26 +0000
-tags: [test, architecture]
+tags: [testing, architecture]
 comments: false
 excerpt: So what is a Test Automation Architect? What this guy do?
 ---
