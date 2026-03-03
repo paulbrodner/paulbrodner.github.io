@@ -1,0 +1,18 @@
+---
+layout: none
+permalink: /llms.txt
+---
+# Paul Brodner
+
+> Enterprise Test Architect and AI-augmented engineering practitioner. Personal blog covering AI-driven testing, multi-agent systems, MCP, and quality architecture in regulated healthcare environments.
+
+Paul Brodner has {{ site.time | date: "%Y" | minus: 2008 }}+ years of experience in software quality and engineering, specialising in AI-augmented engineering, multi-agent orchestration, and enterprise quality governance in FDA-regulated clinical trial technology environments. He works at the intersection of AI engineering, enterprise test architecture, and healthcare technology.
+
+## Profile
+
+- [Profile]({{ site.url }}/profile): Full professional background — work history, AI stack, certifications, and expertise areas
+
+## Blog Posts
+
+{% for post in site.posts %}- [{{ post.title }}]({{ site.url }}{{ post.url }}){% if post.excerpt %}: {{ post.excerpt | strip_html | strip_newlines | truncate: 120 }}{% endif %}
+{% endfor %}

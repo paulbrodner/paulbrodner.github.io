@@ -3,7 +3,7 @@ layout: post
 title: Neo4J analysis on Test Results
 date: 2022-05-06 10:20 +0000
 categories: [Tips & Tricks]
-tags: [neo4j]
+tags: [analytics]
 comments: false
 excerpt: Analise your test results data using a graph database
 ---

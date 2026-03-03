@@ -3,7 +3,7 @@ layout: post
 title: Jekyll Containerization
 date: 2022-05-04 12:42 +0000
 categories: [Tips & Tricks]
-tags: [docker]
+tags: [devops, tutorial]
 comments: false
 excerpt: How to test my Jekyll blog in Docker
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Report Portal as your test automation analytics platform
 date: 2022-05-10 12:22 +0000
 categories: [Tips & Tricks]
-tags: [dashboard, analytics, report-portal]
+tags: [analytics, testing]
 comments: false
 excerpt: Understand the pulse of your test automation results using real time dashboards
 ---

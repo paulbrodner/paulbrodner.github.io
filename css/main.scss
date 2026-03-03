@@ -75,8 +75,8 @@ body {
 }
 
 .post-container {
-  font-size: 1.125rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .post-container p {
@@ -144,12 +144,12 @@ pre:not(.highlight) code {
 
 /* Inline code */
 code:not(pre code) {
-  background: #f6f8fa;
-  color: #24292e;
-  padding: .1em .4em;
-  border: 1px solid #e1e4e8;
-  border-radius: 3px;
-  font-size: .85em;
+  background: #fdf3f1;
+  color: #c0392b;
+  padding: 2px 6px;
+  border: 1px solid #f5d0c8;
+  border-radius: 4px;
+  font-size: .875em;
 }
 
 /* Responsive scrollbar for code blocks */
@@ -564,6 +564,31 @@ table th {
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
+}
+
+/* Post content typography */
+.post h2 {
+  border-left: 3px solid var(--primary-color);
+  padding-left: 14px;
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+}
+
+.post h3 {
+  margin-top: 1.8em;
+  margin-bottom: 0.5em;
+  color: #444;
+}
+
+.post ul li,
+.post ol li {
+  margin-bottom: 0.5em;
+  line-height: 1.75;
+}
+
+.post ul,
+.post ol {
+  margin-bottom: 1.5em;
 }
 
 /* Print styles */

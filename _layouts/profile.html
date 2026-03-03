@@ -31,16 +31,6 @@ layout: page
 
 {% include timeline-article.html %}
 
-<h3>Technologies/Skills</h3>
-(my "bubble" world)
-<div class="tagcloud">
-    <ul>
-        {% for know in site.data.profile.knows %}
-        <li>{{know }}</li>
-        {% endfor %}
-    </ul>
-</div>
-
 <h3>Certifications</h3>
 <section class="post">
     <table class="table">
@@ -61,6 +51,16 @@ layout: page
           </tbody>
     </table>
 </section>
+
+<h3>Technologies/Skills</h3>
+(my "bubble" world)
+<div class="tagcloud">
+    <ul>
+        {% for know in site.data.profile.knows %}
+        <li>{{know }}</li>
+        {% endfor %}
+    </ul>
+</div>
 
 <h3>Awards/Recognitions</h3>
 <section class="post">
