@@ -3,7 +3,7 @@ layout: post
 title: SQLite and NodeJS for storing Test Metadata
 date: 2022-05-06 08:27 +0000
 categories: [Tutorials]
-tags: [notejs, sqlite]
+tags: [analytics, tutorial]
 comments: false
 excerpt: Simple REST API with NodeJS that will store/retrieve data to/from SQLiteDB
 ---

@@ -8,7 +8,7 @@
 .summary p {
   margin-bottom: 0.5em;
   line-height: 1.7em;
-  text-align: justify;
+  text-align: left;
 }
 
 .summary .first-letter {
@@ -73,13 +73,13 @@
 .timeline-article .content-left,
 .timeline-article .content-right {
   position: relative;
-  text-align: justify;
+  text-align: left;
   width: auto;
   border: 1px solid #ddd;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,.03);
   padding: 27px 25px;
-  font-size: small;
+  font-size: 14px;
 }
 .timeline-article p {
   margin: 0 0 0 0px;
@@ -100,8 +100,11 @@
 }
 
 .timeline-article .work-logo{
-  position: absolute;
-  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  width: auto;
+  margin-left: 6px;
 }
 
 .timeline-article .content-left-container {

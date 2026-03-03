@@ -11,7 +11,7 @@ layout: page
 <h2>
     Summary</h2>
 <div class="summary">
-    <p><span class="first-letter">E</span>xperienced Enterprise Test Architect with <strong>{{ site.time | date: '%Y' | minus :2008 }}+</strong> years designing and implementing enterprise‑scale automation frameworks across diverse industries. I lead enterprise architecture modernization at Signant Health and, since 2023, have been advancing AI‑augmented testing across LLMs, RAG systems, multi‑agent orchestration, and enterprise MCP implementations. In this role I drive strategic technical direction, perform gap analyses between current and target architectures, and lead modernization initiatives that reduce redundancies across the enterprise. I’ve led significant reductions in regression cycle time while improving reliability. I build scalable automation from scratch, work across multiple programming languages and cloud platforms, mentor teams, and deliver measurable outcomes.</p>
+    <p><span class="first-letter">I</span> am an Enterprise Test Architect with <strong>{{ site.time | date: "%Y" | minus: 2008 }}+</strong> years of experience in software quality and engineering, currently leading enterprise architecture strategy at a global clinical trial technology company. I work at the intersection of AI‑augmented engineering, regulated systems, and enterprise quality governance — designing the systems and strategies that make AI‑driven development reliable and production‑ready.</p>
     <p></p>
     {% for sum in site.data.profile.short_intro %}    
         {% assign firstLetter = sum["intro"] | slice: 0  %}
@@ -30,16 +30,6 @@ layout: page
 </div>
 
 {% include timeline-article.html %}
-
-<h3>Technologies/Skills</h3>
-(my "bubble" world)
-<div class="tagcloud">
-    <ul>
-        {% for know in site.data.profile.knows %}
-        <li>{{know }}</li>
-        {% endfor %}
-    </ul>
-</div>
 
 <h3>Certifications</h3>
 <section class="post">
@@ -61,6 +51,16 @@ layout: page
           </tbody>
     </table>
 </section>
+
+<h3>Technologies/Skills</h3>
+(my "bubble" world)
+<div class="tagcloud">
+    <ul>
+        {% for know in site.data.profile.knows %}
+        <li>{{know }}</li>
+        {% endfor %}
+    </ul>
+</div>
 
 <h3>Awards/Recognitions</h3>
 <section class="post">
