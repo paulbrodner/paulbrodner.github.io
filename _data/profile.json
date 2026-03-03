@@ -1,16 +1,16 @@
 
 { 
   "short_intro": [
-    {"intro": "Core expertise:", "details": [
-      "enterprise-scale test automation frameworks and strategy (Python, Java, Ruby, .NET/C#) tailored to business and architectural requirements",
-      "AI-augmented testing since 2023: LLMs, RAG, multi-agent orchestration (CrewAI), Model Context Protocol (MCP), and AI-human workflow automation (n8n)",
+    {"intro": "Areas of practice:", "details": [
+      "enterprise architecture strategy and AI-augmented engineering in regulated clinical trial environments (FDA 21 CFR Part 11 compliance context)",
+      "AI-augmented engineering since 2023: multi-agent orchestration (CrewAI), RAG systems (LangChain), Model Context Protocol (MCP), workflow automation (n8n), and AI pair programming with Claude Code (since Aug 2024)",
+      "enterprise-scale test automation strategy and architecture (Python, Java, Ruby, .NET/C#)",
       "cloud-native and DevOps practices: AWS, CI/CD, Infrastructure as Code (Terraform, Packer), containerization (Docker, Kubernetes)",
       "performance, security testing, and ethical hacking integrated into test strategy",
       "data analytics dashboards (Dash, Pandas) for actionable quality insights",
       "consultancy, mentoring, and knowledge transfer across engineering teams",
-      "clear technical communication using <a href='https://en.wikipedia.org/wiki/Architecturally_significant_requirements' target=\"_blank\">ASR (Architecturally Significant Requirements)</a>"
+      "clear technical communication using <a href=’https://en.wikipedia.org/wiki/Architecturally_significant_requirements’ target=\"_blank\">ASR (Architecturally Significant Requirements)</a>"
     ]},
-    {"intro": "I currently lead enterprise architecture modernization at Signant Health, driving strategic direction, gap analysis, and modernization initiatives that reduce redundancies across the enterprise."},
     {"intro": "I hold a bachelor’s degree in Business Information Systems (2008), ISTQB Foundation certification (2009), and a master’s degree in Management Information Systems (2010)."}
   ],
   
