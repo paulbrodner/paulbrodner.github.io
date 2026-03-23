@@ -37,14 +37,14 @@ layout: page
         <thead>
             <tr>
               <th scope="col">Certificate</th>              
-              <td scope="col">Description</td>
+              <th scope="col">Description</th>
             </tr>
           </thead>
           <tbody>
             {% assign certifications = site.data.profile.certifications  %}
             {% for certificate in certifications %}
             <tr>
-                <td><img src="{{ site.baseurl }}{{ certificate['img'] }}" width="50%" height="50%"></td>
+                <td>{% if certificate['url'] %}<a href="{{ certificate['url'] }}" target="_blank">{% endif %}<img src="{{ site.baseurl }}{{ certificate['img'] }}" width="50%" height="50%">{% if certificate['url'] %}</a>{% endif %}</td>
                 <td><div class="timeline-article"><p>{{certificate["description"] }}</p></div></td>                
             </tr>
             {% endfor %}
@@ -69,7 +69,7 @@ layout: page
             <tr>
               <th scope="col">When</th>
               <th scope="col">What</th>
-              <td scope="col">Feedback</td>
+              <th scope="col">Feedback</th>
             </tr>
           </thead>
           <tbody>
@@ -80,8 +80,9 @@ layout: page
                 <td>{{award["what"] }}</td>
                 {% if award["review"] %}
                 <td><div class="timeline-article"><p>{{award["review"] }}</p></div></td>
+                {% else %}
+                <td></td>
                 {% endif %}
-                
             </tr>
             {% endfor %}
           </tbody>
