@@ -91,7 +91,7 @@
       "startYear": "2019",
       "startMonth": "DEC",
       "summary": "Before the <a href='https://en.wikipedia.org/wiki/COVID-19_pandemic' target=\"_blank\">global pandemic</a> I joined Signant Health to continue my path as a Test Automation Architect in a different, exciting industry. <br>Signant enables clinical trials across traditional, virtual, and hybrid designs and helped <a href='https://www.pfizer.com/' target=\"_blank\">Pfizer</a> develop the COVID‑19 vaccine in record time through technology and innovation.",
-      "achievemnts": [
+      "achievements": [
         "Built Analytics Dashboard (Dash, Pandas) to analyze legacy test results in real time, provide high‑level overviews (pass rate, duration), cluster defects, compare runs, and identify flaky tests",
         "Revived performance testing by building a tool capable of simulating millions of users to load test applications (AWS, deployed with Terraform)",
         "Migrated jobs from legacy Jenkins to the latest version using Pipeline as Code",
@@ -114,7 +114,7 @@
       "startYear": "2022",
       "startMonth": "APR",
       "summary": "Strategic leadership role overseeing automation architecture, framework evolution, and team development.",
-      "achievemnts": [
+      "achievements": [
         "Defined comprehensive automation strategies enabling earlier and more reliable regression testing",
         "Developed and applied frameworks addressing functionality, performance, scalability, and maintainability",
         "Collaborated with Software Architects to improve test automation hardware and system architecture",
@@ -132,7 +132,7 @@
       "startYear": "2023",
       "startMonth": "JUL",
       "summary": "Leading enterprise architecture strategy for a clinical trial technology platform: defining target enterprise architecture, driving modernization initiatives, and pioneering AI‑augmented testing strategies (LLMs, RAG, multi‑agent systems, MCP).",
-      "achievemnts": [
+      "achievements": [
         "Designed and implemented an EOL-notifier system leveraging advanced LLM capabilities",
         "Built Retrieval-Augmented Generation (RAG) solutions with LangChain for enterprise knowledge management",
         "Deployed multi-agent automation workflows using CrewAI for collaborative AI operations",
@@ -258,7 +258,7 @@
     {"img": "/images/certificates/ethical-hacking.png", "description": "Hands-on ethical hacking"},    
     {"img": "/images/certificates/web-sec.png", "description": "Learn Penetration Testing from scratch to become a bug bounty hunter and web security tester"},    
     {"img": "/images/certificates/aws-technical-profesional.png", "description": "This course provides AWS Partners with fundamental, technical knowledge of AWS cloud computing, global infrastructure, services, common solutions, migration, security, and compliance."},
-    {"img": "/images/certificates/claude-code-in-action.png", "description": "Claude Code in Action — hands-on AI-augmented engineering with Anthropic's Claude Code CLI."}
+    {"img": "/images/certificates/claude-code-in-action.png", "description": "Claude Code in Action — hands-on AI-augmented engineering with Anthropic's Claude Code CLI.", "url": "https://verify.skilljar.com/c/zgws7awjj6bv"}
 
   ]
 
