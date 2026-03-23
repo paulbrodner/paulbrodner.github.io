@@ -257,7 +257,8 @@
     {"img": "/images/certificates/ethical-hacking-beginers.png", "description": "Dive into ethical hacking"},    
     {"img": "/images/certificates/ethical-hacking.png", "description": "Hands-on ethical hacking"},    
     {"img": "/images/certificates/web-sec.png", "description": "Learn Penetration Testing from scratch to become a bug bounty hunter and web security tester"},    
-    {"img": "/images/certificates/aws-technical-profesional.png", "description": "This course provides AWS Partners with fundamental, technical knowledge of AWS cloud computing, global infrastructure, services, common solutions, migration, security, and compliance."}
+    {"img": "/images/certificates/aws-technical-profesional.png", "description": "This course provides AWS Partners with fundamental, technical knowledge of AWS cloud computing, global infrastructure, services, common solutions, migration, security, and compliance."},
+    {"img": "/images/certificates/claude-code-in-action.png", "description": "Claude Code in Action — hands-on AI-augmented engineering with Anthropic's Claude Code CLI."}
 
   ]
 
