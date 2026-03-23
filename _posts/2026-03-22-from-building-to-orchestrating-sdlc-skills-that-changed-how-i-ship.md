@@ -46,7 +46,7 @@ Self-reviews the branch for logic bugs, edge cases, and security issues that lin
 
 I used these three skills on two projects back to back.
 
-The first was an inhouse tool I'd been procrastinating on for months. First commit on March 18th. By March 22nd — four days later — 40 stories were designed, implemented, and shipped. To be honest about what that means: these were small, well-scoped stories. Typical AC count was 3-5 items. Nothing architecturally complex. What the number reflects isn't raw feature size — it's how much overhead normally gets in the way of shipping small things, and how much of that overhead disappeared.
+The first was [StoryTime](/2026/storytime-building-a-local-ai-storybook-app/) — a bedtime story generator I built with my daughter, where she helps write the story and local models generate the cover images. First commit on March 18th. By March 22nd — four days later — 40 stories were designed, implemented, and shipped. To be honest about what that means: these were small, well-scoped stories. Typical AC count was 3-5 items. Nothing architecturally complex. What the number reflects isn't raw feature size — it's how much overhead normally gets in the way of shipping small things, and how much of that overhead disappeared.
 
 The second was **Jarvis** — my personal AI assistant, built as a tiny 3D robot that lives in the corner of your screen: always on top, hotkey-activated, context-aware. Not a demo, not a side experiment — a tool I actually use every day. Init commit on March 19th. First release tag three days later.
 
