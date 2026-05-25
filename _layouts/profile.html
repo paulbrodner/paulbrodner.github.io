@@ -11,7 +11,7 @@ layout: page
 <h2>
     Summary</h2>
 <div class="summary">
-    <p><span class="first-letter">I</span> am an <strong>Enterprise Architect</strong> with <strong>{{ site.time | date: "%Y" | minus: 2008 }}+</strong> years of experience, shaping the technical vision of a global clinical trial technology company — reducing system complexity, connecting teams across domains, and pioneering AI‑augmented engineering practices.</p>
+    <p><span class="first-letter">I</span> am an <strong>Enterprise Test Automation Architect</strong> with <strong>{{ site.time | date: "%Y" | minus: 2008 }}+</strong> years of experience — building AI platforms, validating LLM systems, and driving test automation strategy for a global clinical trial technology company in regulated healthcare.</p>
     <p></p>
     {% for sum in site.data.profile.short_intro %}    
         {% assign firstLetter = sum["intro"] | slice: 0  %}
@@ -29,26 +29,76 @@ layout: page
     {% endfor %}
 </div>
 
+<h3>Frameworks & Methodologies</h3>
+<section class="post">
+    <ul>
+        <li><strong>Agent Spec Methodology</strong> — A checklist-driven approach for turning vague AI ideas into precise, executable agent specifications. <a href="/2026/writing-ai-agent-specs-less-art-more-checklists/">Read more →</a></li>
+        <li><strong>AI-Augmented SDLC</strong> — A framework for orchestrating the full software development lifecycle with AI agents, from design through release. <a href="/2026/from-building-to-orchestrating-sdlc-skills-that-changed-how-i-ship/">Read more →</a></li>
+        <li><strong>TAS (Test Automation System)</strong> — Enterprise test automation framework built for Alfresco's ECM platform, handling thousands of tests across configurations. <a href="/2019/tas/">Read more →</a></li>
+    </ul>
+</section>
+
 {% include timeline-article.html %}
 
 <h3>Certifications</h3>
+
+<h4>Security & Ethical Hacking</h4>
 <section class="post">
     <table class="table">
         <thead>
             <tr>
-              <th scope="col">Certificate</th>              
+              <th scope="col">Certificate</th>
               <th scope="col">Description</th>
             </tr>
-          </thead>
-          <tbody>
-            {% assign certifications = site.data.profile.certifications  %}
-            {% for certificate in certifications %}
+        </thead>
+        <tbody>
+            {% for certificate in site.data.profile.certifications.security %}
             <tr>
                 <td>{% if certificate['url'] %}<a href="{{ certificate['url'] }}" target="_blank">{% endif %}<img src="{{ site.baseurl }}{{ certificate['img'] }}" width="50%" height="50%">{% if certificate['url'] %}</a>{% endif %}</td>
-                <td><div class="timeline-article"><p>{{certificate["description"] }}</p></div></td>                
+                <td><div class="timeline-article"><p>{{certificate["description"] }}</p></div></td>
             </tr>
             {% endfor %}
-          </tbody>
+        </tbody>
+    </table>
+</section>
+
+<h4>AI & DevOps</h4>
+<section class="post">
+    <table class="table">
+        <thead>
+            <tr>
+              <th scope="col">Certificate</th>
+              <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for certificate in site.data.profile.certifications.ai_devops %}
+            <tr>
+                <td>{% if certificate['url'] %}<a href="{{ certificate['url'] }}" target="_blank">{% endif %}<img src="{{ site.baseurl }}{{ certificate['img'] }}" width="50%" height="50%">{% if certificate['url'] %}</a>{% endif %}</td>
+                <td><div class="timeline-article"><p>{{certificate["description"] }}</p></div></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+
+<h4>Professional Development</h4>
+<section class="post">
+    <table class="table">
+        <thead>
+            <tr>
+              <th scope="col">Certificate</th>
+              <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for certificate in site.data.profile.certifications.professional %}
+            <tr>
+                <td>{% if certificate['url'] %}<a href="{{ certificate['url'] }}" target="_blank">{% endif %}<img src="{{ site.baseurl }}{{ certificate['img'] }}" width="50%" height="50%">{% if certificate['url'] %}</a>{% endif %}</td>
+                <td><div class="timeline-article"><p>{{certificate["description"] }}</p></div></td>
+            </tr>
+            {% endfor %}
+        </tbody>
     </table>
 </section>
 
