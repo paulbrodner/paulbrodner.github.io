@@ -4,7 +4,7 @@ title: 'Brain: Teaching Claude Code to Remember What You Already Taught It'
 date: 2026-05-25 10:00 +0000
 categories: [Frameworks]
 tags: [AI, tools]
-comments: false
+comments: true
 excerpt: "Claude Code forgets everything when a session ends. After 30 days of building and using a session-to-knowledge pipeline, here's the architecture that makes corrections stick."
 ---
 

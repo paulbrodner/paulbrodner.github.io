@@ -4,7 +4,7 @@ title: 'Can AI Test Thoroughly? Why the Industry Is Sleepwalking Into a QA Crisi
 date: 2026-06-18 19:18 +0000
 categories: [AI]
 tags: [AI, testing]
-comments: false
+comments: true
 excerpt: "AI can generate a thousand tests in minutes — and that's exactly why teams are starting to mistake coverage for quality."
 ---
 

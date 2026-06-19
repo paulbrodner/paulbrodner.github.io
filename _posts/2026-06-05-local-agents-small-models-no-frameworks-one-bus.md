@@ -4,7 +4,7 @@ title: 'Local Agents: Small Models, No Frameworks, One Bus'
 date: 2026-06-05 10:10 +0000
 categories: [Frameworks]
 tags: [AI, tools]
-comments: false
+comments: true
 excerpt: "Most agent failures are scope failures — here's the minimal architecture that keeps tasks bounded, coordination simple, and the whole thing testable."
 ---
 
