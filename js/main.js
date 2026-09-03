@@ -37,15 +37,11 @@ sitemap:
       });
     });
 
-    // Check if we should collapse panel on load
-    if (window.location.hash === '#blog') {
-      panelCover.classList.add('panel-cover--collapsed');
-    }
-
-    if (window.location.pathname !== '{{ site.baseurl }}/' && 
-        window.location.pathname !== '{{ site.baseurl }}/index.html') {
-      panelCover.classList.add('panel-cover--collapsed');
-    }
+    // NOTE: the initial collapsed state is no longer set here.
+    //   * non-homepage  -> rendered server-side in _includes/header.html
+    //   * /#blog        -> inline pre-paint script in the same file
+    // Applying it on DOMContentLoaded mutated `width`/`max-width` after first
+    // paint, which reflowed the page and showed up as CLS ~1.0 in RUM.
   }
 
   function animatePanelWidth(element, maxWidth, width) {
