@@ -1,8 +1,9 @@
 # Site settings
 title: Paul Brodner's Blog
 description: 'Drawing the lines AI must follow'
-url: 'https://paulbrodner.github.io'
+url: 'https://paulbrodner.dev'
 baseurl: ''
+lang: en
 disqus_shortname: 'paulbrodner'
 
 author:
@@ -28,6 +29,7 @@ defaults:
 # Build settings
 destination: _site
 paginate: 5
+paginate_path: /page:num
 permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
@@ -43,4 +45,19 @@ kramdown:
   hard_wrap: false
 
 plugins: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'Rakefile']
+
+# NOTE: `exclude` REPLACES Jekyll's defaults rather than extending them, so every
+# repo-root file that is not listed here gets copied verbatim into _site and served.
+exclude:
+  - README.md
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - Dockerfile
+  - Makefile
+  - SEO/
+  - script/
+  - tests/
+  - .travis.yml
+  - vendor/

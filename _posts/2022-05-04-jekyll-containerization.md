@@ -5,7 +5,7 @@ date: 2022-05-04 12:42 +0000
 categories: [Tips & Tricks]
 tags: [devops, tutorial]
 comments: false
-excerpt: How to test my Jekyll blog in Docker
+excerpt: Running a Jekyll blog entirely inside Docker — no local Ruby installation, a reproducible build, and the same container used for local preview and for the HTML validation suite.
 ---
 After a couple of months, I've started to update again my blog, but at this time (on windows) I got a lot of problems installing, configuring ruby smoothly.
 

@@ -3,7 +3,7 @@ layout: post
 title: 'What Is AI, Really? I Had to Explain It to My Daughter'
 date: 2026-03-23 07:00 +0000
 categories: [Tips & Tricks]
-tags: [AI]
+tags: [ai]
 comments: false
 excerpt: "My daughter asked me what AI is. Trying to explain it to her — simply, honestly — turned out to be harder than any technical interview I've ever done."
 ---

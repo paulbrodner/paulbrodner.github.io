@@ -3,7 +3,7 @@ layout: post
 title: "The QA Layer Your AI Toolchain Won't Build For You"
 date: 2026-06-25 10:00 +0000
 categories: [AI]
-tags: [AI, testing]
+tags: [ai, testing]
 comments: false
 excerpt: "Five instruments for closing the gap between AI-assisted testing and actual quality assurance — mutation testing, property-based testing, negative test mandates, LLM-as-Judge, and not hollowing out your QA function."
 ---

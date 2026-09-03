@@ -1,0 +1,42 @@
+name: verify
+
+# Test-only gate. Deployment stays on GitHub Pages' built-in "Deploy from
+# branch" build -- taking over the deploy would mean dropping the github-pages
+# gem, and the only thing that buys is jekyll-last-modified-at. See SEO/PLAN.md 3.2.
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # html-proofer 3.x links against libcurl via typhoeus.
+      - name: Install libcurl
+        run: sudo apt-get update && sudo apt-get install -y libcurl4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python test deps
+        run: pip install pytest beautifulsoup4 lxml pillow requests
+
+      # rake test builds the site, then validates HTML, internal links and
+      # image alt attributes.
+      - name: HTML + link validation
+        run: bundle exec rake test
+
+      # rake seo rebuilds and runs the SEO/GEO regression suite: indexability,
+      # Open Graph, JSON-LD, canonical, sitemap hygiene.
+      - name: SEO regression suite
+        run: bundle exec rake seo

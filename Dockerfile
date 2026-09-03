@@ -7,9 +7,16 @@ RUN apt-get update && \
       build-essential \
       git \
       libffi-dev \
-      pkg-config && \
+      pkg-config \
+      python3 \
+      python3-pip \
+      libcurl4 && \
     rm -rf /var/lib/apt/lists/* && \
     bundle config build.ffi --enable-system-libffi
+
+# SEO regression suite (rake seo) runs in the same container -- see SEO/PLAN.md 4.2
+RUN pip3 install --no-cache-dir --break-system-packages \
+      pytest beautifulsoup4 lxml pillow requests
 
 # Leverage Docker layer caching for bundler by copying Gem specification files first
 COPY Gemfile Gemfile.lock* ./

@@ -1,8 +1,8 @@
 # paulbrodner.github.io
-My Personal Blog https://paulbrodner.github.io
+My Personal Blog https://paulbrodner.dev
 
 
-[![Build Status](https://travis-ci.org/paulbrodner/paulbrodner.github.io.svg?branch=master)](https://travis-ci.org/paulbrodner/paulbrodner.github.io)  ![visitors](https://visitor-badge.laobi.icu/badge?page_id=paulbrodner.github.io)
+[![verify](https://github.com/paulbrodner/paulbrodner.github.io/actions/workflows/verify.yml/badge.svg)](https://github.com/paulbrodner/paulbrodner.github.io/actions/workflows/verify.yml)  ![visitors](https://visitor-badge.laobi.icu/badge?page_id=paulbrodner.github.io)
 
 
 # run everithing in Docker

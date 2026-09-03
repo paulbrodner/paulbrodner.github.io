@@ -38,7 +38,7 @@ Those are ok for now, but what quality attributes should I focus on?
 ## The Solution
 
 Behold `select-star` -> a CLI(command line interface) tool written in GO that will process queries defined in YAML files
-![](/images/posts/select-star.png)
+![select-star CLI executing YAML-defined queries and reporting rows processed](/images/posts/select-star.png)
 
 The tool will look by default for a `select-star.yml` configuration file (in current or your user's home folder) where you can define source and target DBs along with SQL queries that will be executed.
 
@@ -51,7 +51,7 @@ You can also define mappings or corelation between a source object and a target 
 These mappings will be used when we run the queries.
 
 ### Architecture
-![](/images/posts/select-star-arch.png)
+![select-star architecture: YAML config drives goroutines reading from source DBs and writing to target DBs](/images/posts/select-star-arch.png)
 * `ping` - will test the connection of source DB and target DBs defined in YAML configuration file used
 * `check --query` - will execute a single query identified by name from YAML configuration file used
 * `check --all` - will execute all queries identified by name from YAML configuration file used

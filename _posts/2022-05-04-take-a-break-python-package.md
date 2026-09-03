@@ -54,9 +54,9 @@ No one has ever pair-programmed with Chuck Norris and lived to tell about it.
 ```
 
 This is the full screen image that will show a random image
-![](/images/posts/take_a_break.png)
+![Take-a-Break running in the terminal, counting down to the next break](/images/posts/take_a_break.png)
 It has also a joke displayed at the bottom and also some menus to access the settings dialog:
 
-![](/images/posts/take_a_break-settings.png)
+![Take-a-Break settings file showing configurable break interval and duration](/images/posts/take_a_break-settings.png)
 Here I can update the link to the url resource and also the reminder alert
 

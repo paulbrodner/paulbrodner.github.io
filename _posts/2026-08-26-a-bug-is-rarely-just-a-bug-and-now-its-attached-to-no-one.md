@@ -3,7 +3,7 @@ layout: post
 title: "A Bug Is Rarely Just a Bug — And Now It's Attached to No One"
 date: 2026-08-26 09:30 +0000
 categories: [AI]
-tags: [AI, testing]
+tags: [ai, testing]
 comments: false
 excerpt: "AI didn't shrink the political weight hanging off every bug — it just cut the rope connecting it to a person, and that's a worse problem than the one it replaced."
 ---

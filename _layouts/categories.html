@@ -1,29 +1,35 @@
 ---
 layout: default
 ---
-<h2>Categories:</h2>
-<div class="categories"> 
-{% for catitem in site.categories  %} 
-  <a href="#{{ catitem[0] }}">{{  catitem[0] }}</a>
-{% endfor %}
-</div>
+<article class="post-container post-container--single">
+  <header class="post-header">
+    <h1 class="post-title">Categories</h1>
+  </header>
 
-<!-- iterate through all categories on the site --> 
-{% for catitem in site.categories %} 
-  <!-- for each tag, create an anchor by using the tag name as an id --> 
-  <div id="{{ catitem[0] }}">  
-    <h3> {{ catitem[0] }} </h3>  <!-- for create a heading --> 
+  <section class="post">
+    <p>The curated taxonomy for this blog &mdash; broader than tags, and closer to how the work is
+    actually organised.</p>
 
-    <ul> <!-- create the list of posts -->
-      <!-- iterate through all the posts on the site --> 
-      {% for post in site.posts %} 
-        <!-- list only those which contain the current tag --> 
-        {% if post.categories contains catitem[0] %} 
-            <li>
-              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-{% endfor %}
+    {%- comment -%}
+      IDs and anchors are slugified: a raw category name like "Tips & Tricks"
+      produces id="Tips & Tricks", which is not addressable as a URL fragment.
+      That silently broke the anchor for 15 of 28 posts.
+    {%- endcomment -%}
+    <div class="categories">
+      {% for catitem in site.categories %}<a href="#{{ catitem[0] | slugify }}">{{ catitem[0] }}</a> {% endfor %}
+    </div>
+
+    {% for catitem in site.categories %}
+    <div id="{{ catitem[0] | slugify }}">
+      <h2>{{ catitem[0] }}</h2>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.categories contains catitem[0] %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </section>
+</article>

@@ -4,7 +4,7 @@ title: Test my rendered html files with 'html-proofer'
 date: 2017-12-22 11:56 +0200
 categories: [Tips & Tricks]
 tags: [automation, devops]
-excerpt: Test my rendered html file with html-proofer
+excerpt: How to validate the HTML a static site generator produces — broken links, missing image alt attributes and malformed markup — by running html-proofer over the built output as part of the build.
 ---
 Now that I defined my [static website](https://github.com/paulbrodner/paulbrodner.github.io), I need a way to test any changes that I will do in future.
 Here are the [high level requirements](https://github.com/paulbrodner/paulbrodner.github.io/issues/8) that I want to cover:

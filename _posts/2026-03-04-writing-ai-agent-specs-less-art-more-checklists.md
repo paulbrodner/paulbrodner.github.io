@@ -3,7 +3,7 @@ layout: post
 title: 'Writing AI Agent Specs: Less Art, more checklists'
 date: 2026-03-04 06:51 +0000
 categories: [Tips & Tricks]
-tags: [AI]
+tags: [ai]
 comments: false
 excerpt: "How building 8 specialized AI agents for a full SDLC taught me that good specs aren't about prose — they're about checklists, boundaries, and templates."
 ---

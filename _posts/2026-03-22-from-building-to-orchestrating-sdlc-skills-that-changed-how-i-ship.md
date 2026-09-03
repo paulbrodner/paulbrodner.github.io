@@ -3,7 +3,7 @@ layout: post
 title: 'From Building to Orchestrating: The SDLC Skills That Changed How I Ship'
 date: 2026-03-22 13:39 +0000
 categories: [Tips & Tricks]
-tags: [AI, SDLC]
+tags: [ai, sdlc]
 comments: false
 excerpt: "I distilled my 8-agent SDLC framework into three skills and shipped two projects in under a week. The velocity was real. So were the failure modes."
 ---

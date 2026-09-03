@@ -1,0 +1,55 @@
+{%- comment -%}
+  Related posts by shared tags. Two passes so that strong matches (2+ shared
+  tags) win the slots before weak ones fill the remainder -- without this,
+  every AI post would list the same four most-recent AI posts.
+
+  site.posts is reverse-chronological, so within each pass the newest wins.
+{%- endcomment -%}
+
+{%- assign max_related = 4 -%}
+{%- assign picked = "" -%}
+{%- assign picked_count = 0 -%}
+
+{%- for post in site.posts -%}
+  {%- if picked_count < max_related and post.url != page.url -%}
+    {%- assign common = 0 -%}
+    {%- for tag in post.tags -%}
+      {%- if page.tags contains tag -%}{%- assign common = common | plus: 1 -%}{%- endif -%}
+    {%- endfor -%}
+    {%- if common >= 2 -%}
+      {%- assign picked = picked | append: post.url | append: "|" -%}
+      {%- assign picked_count = picked_count | plus: 1 -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- for post in site.posts -%}
+  {%- if picked_count < max_related and post.url != page.url -%}
+    {%- assign key = post.url | append: "|" -%}
+    {%- unless picked contains key -%}
+      {%- assign common = 0 -%}
+      {%- for tag in post.tags -%}
+        {%- if page.tags contains tag -%}{%- assign common = common | plus: 1 -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if common >= 1 -%}
+        {%- assign picked = picked | append: post.url | append: "|" -%}
+        {%- assign picked_count = picked_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if picked_count > 0 -%}
+<aside class="related-posts">
+  <h2>Related posts</h2>
+  <ul>
+    {%- assign picked_urls = picked | split: "|" -%}
+    {%- for picked_url in picked_urls -%}
+      {%- assign related = site.posts | where: "url", picked_url | first -%}
+      {%- if related %}
+    <li><a href="{{ site.baseurl }}{{ related.url }}">{{ related.title }}</a></li>
+      {%- endif -%}
+    {%- endfor %}
+  </ul>
+</aside>
+{%- endif -%}

@@ -1,0 +1,96 @@
+{%- comment -%}
+  Structured data. Emits BlogPosting on posts, Person on /profile, Blog on the
+  homepage. Relies on seo_desc / seo_image / seo_url being assigned in head.html
+  before this include is called.
+
+  dateModified falls back to the publish date. Set `last_modified_at: YYYY-MM-DD`
+  in a post's front matter when you materially revise it -- that is deliberately
+  manual, because the jekyll-last-modified-at plugin would force abandoning the
+  github-pages gem and taking over the deploy. See SEO/PLAN.md 3.2.
+{%- endcomment -%}
+
+{%- if page.layout == 'post' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ seo_url | jsonify }}
+  },
+  "headline": {{ page.title | jsonify }},
+  "description": {{ seo_desc | jsonify }},
+  "image": {{ seo_image | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema | jsonify }}{% else %}{{ page.date | date_to_xmlschema | jsonify }}{% endif %},
+  "url": {{ seo_url | jsonify }},
+  "inLanguage": "en",
+  "keywords": {{ page.tags | join: ", " | jsonify }},
+  "articleSection": {{ page.categories | join: ", " | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ site.url | append: "/profile" | jsonify }},
+    "sameAs": [
+      "https://www.linkedin.com/in/{{ site.author.linkedin_username }}",
+      "https://github.com/{{ site.author.github_username }}",
+      "https://twitter.com/{{ site.author.twitter_username }}"
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ site.url | jsonify }}
+  },
+  "isPartOf": {
+    "@type": "Blog",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }}
+  }
+}
+</script>
+{%- elsif page.url == '/profile' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | jsonify }},
+  "url": {{ site.url | append: "/profile" | jsonify }},
+  "image": {{ site.url | append: "/images/profile.png" | jsonify }},
+  "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
+  "jobTitle": "Enterprise Test Automation Architect",
+  "description": "Enterprise Test Automation Architect specialising in AI-augmented engineering, multi-agent orchestration, and quality governance in FDA-regulated clinical trial technology.",
+  "knowsAbout": [
+    "Test automation",
+    "AI-assisted software testing",
+    "Quality assurance strategy",
+    "Multi-agent systems",
+    "Model Context Protocol",
+    "Mutation testing",
+    "Property-based testing",
+    "Regulated software development lifecycle"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/{{ site.author.linkedin_username }}",
+    "https://github.com/{{ site.author.github_username }}",
+    "https://twitter.com/{{ site.author.twitter_username }}"
+  ]
+}
+</script>
+{%- elsif page.url == '/' -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ site.url | append: "/profile" | jsonify }}
+  }
+}
+</script>
+{%- endif -%}

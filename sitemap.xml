@@ -30,7 +30,22 @@ sitemap:
     {% endunless %}
   {% endfor %}
   {% for page in site.pages %}
-    {% unless page.sitemap.exclude == "yes" or page.robots contains "noindex" %}
+    {%- comment -%}
+      Only real, indexable HTML pages belong in a sitemap.
+        * `ext` filter drops css/js/json/xml/txt outputs (main.css was listed).
+        * Paginated archives all originate from index.html, so `path == index.html`
+          with a url other than "/" identifies /page2/../pageN/. They carry
+          noindex via meta, and listing a noindex URL contradicts that signal.
+    {%- endcomment -%}
+    {% assign last_segment = page.url | split: '/' | last %}
+    {% assign segment_parts = last_segment | split: '.' %}
+    {% assign ext = '' %}
+    {% if segment_parts.size > 1 %}{% assign ext = segment_parts | last %}{% endif %}
+    {% assign is_html = false %}
+    {% if ext == '' or ext == 'html' %}{% assign is_html = true %}{% endif %}
+    {% assign is_paginated = false %}
+    {% if page.name == 'index.html' and page.dir contains '/page' %}{% assign is_paginated = true %}{% endif %}
+    {% unless page.sitemap.exclude == "yes" or page.robots contains "noindex" or is_html == false or is_paginated %}
     <url>
       <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
       {% if page.sitemap.lastmod %}

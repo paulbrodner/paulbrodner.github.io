@@ -3,7 +3,8 @@ layout: post
 title: 'MCP: The Missing Piece in Your AI Testing Puzzle'
 date: 2025-02-17 09:56 +0000
 comments: false
-tags: [AI, testing]
+categories: [AI]
+tags: [ai, testing]
 description: 
 excerpt: 
 ---

@@ -1,6 +1,8 @@
 ---
-layout: none
+layout: null
 permalink: /llms.txt
+sitemap:
+  exclude: 'yes'
 ---
 # Paul Brodner
 

@@ -1,24 +1,29 @@
 ---
 layout: default
 ---
+<article class="post-container post-container--single">
+  <header class="post-header">
+    <h1 class="post-title">Topics</h1>
+  </header>
 
-<h1>Tags:</h1>
-<!-- iterate through all tags on the site --> 
-{% for tagitem in site.tags %} 
-  <!-- for each tag, create an anchor by using the tag name as an id --> 
-  <div id="{{ tagitem[0] }}">  
-    <h3> {{ tagitem[0] }} </h3>  <!-- for create a heading --> 
+  <section class="post">
+    <p>Every tag used across the blog, with the posts filed under it.</p>
 
-    <ul> <!-- create the list of posts -->
-      <!-- iterate through all the posts on the site --> 
-      {% for post in site.posts %} 
-        <!-- list only those which contain the current tag --> 
-        {% if post.tags contains tagitem[0] %} 
-            <li>
-              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-{% endfor %}
+    <div class="categories">
+      {% for tagitem in site.tags %}<a href="#{{ tagitem[0] | slugify }}">{{ tagitem[0] }}</a> {% endfor %}
+    </div>
+
+    {% for tagitem in site.tags %}
+    <div id="{{ tagitem[0] | slugify }}">
+      <h2>{{ tagitem[0] }}</h2>
+      <ul>
+        {% for post in site.posts %}
+          {% if post.tags contains tagitem[0] %}
+          <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </section>
+</article>

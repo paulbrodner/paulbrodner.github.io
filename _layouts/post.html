@@ -7,7 +7,14 @@ layout: default
     <div class="post-meta">
       <time datetime="{{ page.date | date: "%-d %b %Y" }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time>
       {% if page.tags.size > 0 %}
-      &#8226; <span class="post-meta__tags">on {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+      &#8226; <span class="post-meta__tags">on {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a> {% endfor %}</span>
+      {% endif %}
+      {%- comment -%}
+        Category links are the ONLY in-site path to /categories/ -- the header nav
+        links to Profile and Blog only, so without these the page is orphaned.
+      {%- endcomment -%}
+      {% if page.categories.size > 0 %}
+      &#8226; <span class="post-meta__categories">in {% for cat in page.categories %}<a href="{{ site.baseurl }}/categories/#{{ cat | slugify }}">{{ cat }}</a> {% endfor %}</span>
       {% endif %}
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
@@ -16,6 +23,9 @@ layout: default
   <section class="post">
     {{ content }}
   </section>
+
+  {% include related-posts.html %}
+
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 </article>
 {% if page.comments != false %}{% include disqus.html %}{% endif %}

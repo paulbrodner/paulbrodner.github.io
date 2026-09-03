@@ -3,7 +3,7 @@ layout: post
 title: Claude Code Tips & Tricks
 date: 2025-08-08 09:47 +0000
 categories: [Tips & Tricks]
-tags: [AI, tools]
+tags: [ai, tools]
 comments: false
 excerpt: Practical ways to get more out of Claude Code in your IDE and the Claude app.
 ---

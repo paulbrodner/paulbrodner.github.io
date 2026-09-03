@@ -3,7 +3,7 @@ layout: post
 title: 'StoryTime: Building a Local AI Storybook App That Never Phones Home'
 date: 2026-03-10 07:02 +0000
 categories: [Tips & Tricks]
-tags: [AI, tools]
+tags: [ai, tools]
 comments: false
 excerpt: "My daughter and I built bedtime stories together — she helps write them, local AI generates the cover images, and nothing leaves the machine. Here's how it came together."
 ---

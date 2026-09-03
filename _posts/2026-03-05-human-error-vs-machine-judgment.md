@@ -3,7 +3,7 @@ layout: post
 title: 'Human Error vs Machine Judgment: A Comparative Failure Record'
 date: 2026-03-05 10:01 +0000
 categories: [Tips & Tricks]
-tags: [AI, Security]
+tags: [ai, security]
 comments: false
 excerpt: "Before AI could make catastrophic decisions, humans had a head start. Here's the comparative record — what we broke, how we broke it, and what changed when the mistakes started making themselves."
 ---

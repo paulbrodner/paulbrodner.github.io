@@ -3,7 +3,7 @@ layout: post
 title: 'Two Loops: Fast for Side Projects, Gated for Everything Else'
 date: 2026-08-18 09:00 +0000
 categories: [Frameworks]
-tags: [AI, SDLC]
+tags: [ai, sdlc]
 comments: false
 excerpt: "The design-build-ship loop was built for side projects I could throw away. For codebases other people depend on, I needed four approval gates instead of one — here's why that trade-off is on purpose."
 ---
