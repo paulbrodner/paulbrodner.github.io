@@ -1,0 +1,24 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
+{%- comment -%}
+  /blog/ never existed on this site, but old inbound links point at it.
+  GitHub Pages can't send a real 301, so this is a client-side redirect
+  with a canonical to the home page.
+{%- endcomment -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting to {{ site.url }}/</title>
+  <link rel="canonical" href="{{ site.url }}/">
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url={{ site.baseurl }}/">
+  <script>location.replace("{{ site.baseurl }}/");</script>
+</head>
+<body>
+  <p><a href="{{ site.baseurl }}/">Continue to the blog</a></p>
+</body>
+</html>

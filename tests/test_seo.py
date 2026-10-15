@@ -48,7 +48,8 @@ def base_url(request):
 # Standalone HTML artifacts (Markmap exports, embedded reports). These are
 # static files copied verbatim, not Jekyll pages -- they have no layout and so
 # no title/canonical/OG, and asserting against them is meaningless.
-NON_PAGE_PREFIXES = ("/assets/",)
+# /blog/ is a noindex redirect stub to / (old inbound links), same reasoning.
+NON_PAGE_PREFIXES = ("/assets/", "/blog/")
 
 
 def _local_pages():
